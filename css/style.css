@@ -6,3 +6,45 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+main {
+    height: 100vh;
+    background: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    gap: 5%;
+}
+
+.contenedores {
+    font-size: 4.5em;
+    font-weight: 700;
+    container-name: dark;
+    container-type: inline-size;
+    background: var(--color-3);
+    color: var(--color-2);
+    border-radius: 20px;
+    width: 30%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+}
+
+@media (width < 300px ) {
+    .contenedores {
+        font-size: 5em;
+    }
+}
